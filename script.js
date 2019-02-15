@@ -9,14 +9,14 @@ const aleatorio = function (min, max) {
   
 // PEDIRNDO PARA O USUÁRIO TENTAR ADIVINHAR O NÚMERO
 
-let numero = (Number(prompt(`Tente adivinhar o número entre 0 e 50! Você têm 10 tentativas. ${resposta}`)));
+let numero = (Number(prompt(`Tente adivinhar o número entre 0 e 50! Você têm 10 tentativas.`)));
 
 // CRIANDO CONTADO PARA QUEBRAR O WHILE(MOMENTO EM QUE AS VIDAS CHEGAM AO FIM)
 
 let i = 0;
 
 // WHILE: REPETIR O PROCESSO ATÉ QUE AS VIDAS ACABEM
-while(i <= 4) {
+while(i <= 10) {
 
 // SE O NÚMERO ESCOLHIDO PELO USUÁRIO (variável numero) FOR IGUAL AO VALOR DA FUNÇÃO (numero gerado aleatoriamente) NOTIFICAR QUE ELE GANHOU
     if (numero == resposta){
@@ -27,7 +27,7 @@ while(i <= 4) {
         alert("Você errou! O número escolhido é menor que a resposta certa, tente novamente! Menos 1 vida. ");
 
         // reatribuir o valor da variavel numero para o prompt
-             numero = (Number(prompt(`Tente adivinhar o número!  ${resposta}`)));
+             numero = (Number(prompt(`Tente adivinhar o número!`)));
 
 }
 // SE NENHUMA DAS POSSIBILIDADES ACIMA ACONTECEREM, AVISAR QUE O NÚMERO ESCOLHIDO É MAIOR QUE A RESPOSTA E PEDIR PARA TENTAR NOVAMENTE
